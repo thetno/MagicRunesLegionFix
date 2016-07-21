@@ -216,11 +216,9 @@ function mod:GetRuneInfo(runeid, set)
    local info = runeInfo[spec] or runeInfo[1] -- seems sometimes the rune id is not correct. hmm
    
    local icon = mod:GetRuneIcon(spec, set)
-   mod.info("", icon)
    if mod._vertical then 
       return info, icon, spec, db.colors[spec]
-   else
-   
+   else   
       return info, icon, spec, db.colors[spec]
       --return L[spec], icon, spec, db.colors[spec]
    end
